@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../assets/styles/SmoozieConstructor.scss';
+import '../assets/styles/SmoothieConstructor.scss';
 
 const smoozieConstructor = () => {
   const products = [
