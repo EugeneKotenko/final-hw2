@@ -10,15 +10,13 @@ html {
 .homeSection {
   .parallaxContainer {
     position: relative;
-    max-height: 700px;
+    max-height: 800px;
     overflow: hidden;
     width: 100%;
 
     .parallaxImage {
       width: 100%;
       position: relative;
-      transition: transform 0.2s;
-      transform: translateY(0);
     }
 
     .centeredCaption {
@@ -57,7 +55,7 @@ html {
 
       p {
         font-size: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
       }
 
       .orderNowButton {
@@ -76,6 +74,65 @@ html {
         &:hover {
           background-color: #f1e999;
         }
+      }
+    }
+  }
+}
+
+.teamSection {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 20px;
+
+  .sectionTitle {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 100px;
+    font-weight: 600;
+  }
+
+  .teamMembers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+
+    .teamMember {
+      background-color: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      .teamMemberImage {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #ffffff;
+      }
+
+      .teamMemberName {
+        font-size: 1.3em;
+        margin: 10px 0;
+        font-weight: 600;
+        color: #2c3e50;
+      }
+
+      .teamMemberRole {
+        font-size: 1em;
+        margin-bottom: 15px;
+        color: #7f8c8d;
       }
     }
   }

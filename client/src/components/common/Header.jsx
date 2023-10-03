@@ -37,7 +37,7 @@ function Header({ userScrollY }) {
         <div className={styles.cart}>
           <NavLink to="/cart" className={styles.cartLink}>
             <span className={styles.cartIcon}>🛒</span>
-            <span className={styles.cartCount}>0</span>
+            <span className={styles.cartCount}></span>
           </NavLink>
         </div>
       </div>

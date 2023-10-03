@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";   //HashRouter це костиляра,але я не знайшов як саме вирішити проблему з сервером не на HOME  тепер сайт дриганий(((   
 import { Provider } from "react-redux";
 import "./assets/styles/index.scss";
 import HomePage from "./components/HomePage";
