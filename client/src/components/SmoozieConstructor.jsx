@@ -1,39 +1,41 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import '../assets/styles/SmoothieConstructor.scss';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "../assets/styles/SmoothieConstructor.scss";
 
 const smoozieConstructor = () => {
   const products = [
     {
       id: 1,
-      title: 'Product 1',
+      title: "Product 1",
       price: 10.99,
-      img: 'product1.jpg',
+      img: "product1.jpg",
     },
     {
       id: 2,
-      title: 'Product 2',
+      title: "Product 2",
       price: 15.99,
-      img: 'product2.jpg',
+      img: "product2.jpg",
     },
     {
       id: 3,
-      title: 'Product 3',
+      title: "Product 3",
       price: 20.99,
-      img: 'product3.jpg',
+      img: "product3.jpg",
     },
   ];
-  
 
   const cardItem = (item) => {
     return (
       <div className="col-md-4" key={item.id}>
-        <div className="card my-5 py-4" style={{ width: '18rem' }}>
+        <div className="card my-5 py-4" style={{ width: "18rem" }}>
           <img src={item.img} className="card-img-top" alt={item.title} />
           <div className="card-body text-center">
             <h5 className="card-title">{item.title}</h5>
             <p className="lead">${item.price}</p>
-            <NavLink to={`/products/${item.id}`} className="btn btn-outline-primary">
+            <NavLink
+              to={`/products/${item.id}`}
+              className="btn btn-outline-primary"
+            >
               Buy Now
             </NavLink>
           </div>
