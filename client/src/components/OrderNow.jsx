@@ -26,6 +26,7 @@ const OrderNow = () => {
 
     console.log(`Added ${smoothie.name} to cart.`);
   };
+  
 
   return (
     <div className={styles.container}>
