@@ -1,5 +1,8 @@
-import { createReducer } from '@reduxjs/toolkit';
-import { fetchIngredientsSuccess, fetchIngredientsFailure } from '../actions/ingredientsActions.jsx';
+import { createReducer } from "@reduxjs/toolkit";
+import {
+  fetchIngredientsSuccess,
+  fetchIngredientsFailure,
+} from "../actions/ingredientsActions.jsx";
 
 const initialState = {
   ingredients: [],
@@ -9,13 +12,8 @@ const initialState = {
 
 const ingredientsReducer = createReducer(initialState, (builder) => {
   builder
-    .addCase(fetchIngredientsSuccess, (state, action) => {
-      // Обробка успішного завантаження інгредієнтів
-    })
-    .addCase(fetchIngredientsFailure, (state, action) => {
-      // Обробка помилки завантаження інгредієнтів
-    });
-  // Додайте інші обробники для різних дій
+    .addCase(fetchIngredientsSuccess, (state, action) => {})
+    .addCase(fetchIngredientsFailure, (state, action) => {});
 });
 
 export default ingredientsReducer;

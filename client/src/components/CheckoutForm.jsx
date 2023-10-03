@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import styles from "../assets/styles/Checkout.module.scss";
 
 const Checkout = () => {
-  const cartItems = useSelector((state) => state.addItem) || []; 
+  const cartItems = useSelector((state) => state.addItem) || [];
 
   const total = cartItems.reduce((acc, item) => acc + item.price, 0);
 
@@ -18,7 +18,6 @@ const Checkout = () => {
     </li>
   );
 
-  
   return (
     <>
       <div className={`${styles.container} ${styles["my-5"]}`}>

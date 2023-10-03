@@ -28,7 +28,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    port: 5550,
+    port: 5555,
     historyApiFallback: true,
     static: {
        directory: path.join(__dirname, 'dist')

@@ -1,12 +1,14 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import styles from '../../assets/styles/header.module.scss';
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import styles from "../../assets/styles/header.module.scss";
 
 const logoImageUrl = "./static/images/header_logo02.png";
 
 function Header({ userScrollY }) {
   return (
-    <header className={`${styles.header} ${userScrollY > 70 ? styles.sticky : ""}`}>
+    <header
+      className={`${styles.header} ${userScrollY > 70 ? styles.sticky : ""}`}
+    >
       <div className={styles.wrap}>
         <div className={styles.logoWrap}>
           <Link to="/" className={styles.logoLink}>
@@ -44,4 +46,3 @@ function Header({ userScrollY }) {
 }
 
 export default Header;
-

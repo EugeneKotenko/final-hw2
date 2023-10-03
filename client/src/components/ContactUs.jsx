@@ -1,12 +1,13 @@
 import React from "react";
-import styles from '../assets/styles/ContactUs.module.scss';
-
+import styles from "../assets/styles/ContactUs.module.scss";
 
 const ContactUs = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Contact us</h2>
-      <p className={styles.subtitle}>Reach out to us and let us know if there is anything we can do for you</p>
+      <p className={styles.subtitle}>
+        Reach out to us and let us know if there is anything we can do for you
+      </p>
 
       <form className={styles.form}>
         <div className={styles.inputGroup}>
@@ -31,16 +32,34 @@ const ContactUs = () => {
 
         <div className={styles.checkboxGroup}>
           <input type="checkbox" id="optIn" name="optIn" />
-          <label htmlFor="optIn">I opt-in to receive marketing and promotional materials</label>
+          <label htmlFor="optIn">
+            I opt-in to receive marketing and promotional materials
+          </label>
         </div>
 
-        <button type="submit" className={styles.submitButton}>Submit</button>
+        <button type="submit" className={styles.submitButton}>
+          Submit
+        </button>
       </form>
 
       <p className={styles.recaptchaNote}>
-        This form is protected by reCAPTCHA and the Google 
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and 
-        <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> apply.
+        This form is protected by reCAPTCHA and the Google
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Privacy Policy
+        </a>{" "}
+        and
+        <a
+          href="https://policies.google.com/terms"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Terms of Service
+        </a>{" "}
+        apply.
       </p>
     </div>
   );

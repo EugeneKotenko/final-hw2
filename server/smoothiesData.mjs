@@ -1,5 +1,5 @@
-const smoothiesIngredients = [
-  { id: 1, name: 'Banana', price: 0.5, category: 'fruit', image: 'https://placekitten.com/100/100' },
+const smoothiesData = [
+    { id: 1, name: 'Banana', price: 0.5, category: 'fruit', image: 'https://placekitten.com/100/100' },
   { id: 2, name: 'Strawberry', price: 0.7, category: 'fruit', image: 'https://placekitten.com/100/101' },
   { id: 3, name: 'Blueberry', price: 0.9, category: 'fruit', image: 'https://placekitten.com/100/102' },
   { id: 4, name: 'Orange', price: 0.4, category: 'fruit', image: 'https://placekitten.com/100/103' },
@@ -19,7 +19,13 @@ const smoothiesIngredients = [
   { id: 18, name: 'Beetroot', price: 0.9, category: 'vegetable', image: 'https://placekitten.com/100/117' },
   { id: 19, name: 'Carrot', price: 0.4, category: 'vegetable', image: 'https://placekitten.com/100/118' },
   { id: 20, name: 'Soy Milk', price: 0.6, category: 'liquid', image: 'https://placekitten.com/100/119' },
+  { id: 1, name: 'Banana', price: 0.5, category: 'fruit', image: 'https://placekitten.com/100/100' },
+  { id: 2, name: 'Strawberry', price: 0.7, category: 'fruit', image: 'https://placekitten.com/100/101' },
+  { id: 3, name: 'Blueberry', price: 0.9, category: 'fruit', image: 'https://placekitten.com/100/102' },
+  { id: 4, name: 'Orange', price: 0.4, category: 'fruit', image: 'https://placekitten.com/100/103' },
+  { id: 5, name: 'Mango', price: 1.0, category: 'fruit', image: 'https://placekitten.com/100/104' },
+  { id: 6, name: 'Pineapple', price: 1.2, category: 'fruit', image: 'https://placekitten.com/100/105' },
  
 ];
 
-export default smoothiesIngredients;
+  export default smoothiesData;

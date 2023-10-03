@@ -1,7 +1,5 @@
 const selectAvailableIngredients = (state) => {
-    return state.availableIngredients || []; 
-  };
-  
-  export default selectAvailableIngredients;
-  
-  
+  return state.availableIngredients || [];
+};
+
+export default selectAvailableIngredients;
