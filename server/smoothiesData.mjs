@@ -1,5 +1,5 @@
 const smoothiesData = [
-    { id: 1, name: 'Banana', price: 0.5, category: 'fruit', image: 'https://placekitten.com/100/100' },
+    { id: 1, name: 'Banana', price: 0.5, category: 'fruit', image: '../static/images/1.jpeg' },
   { id: 2, name: 'Strawberry', price: 0.7, category: 'fruit', image: 'https://placekitten.com/100/101' },
   { id: 3, name: 'Blueberry', price: 0.9, category: 'fruit', image: 'https://placekitten.com/100/102' },
   { id: 4, name: 'Orange', price: 0.4, category: 'fruit', image: 'https://placekitten.com/100/103' },
