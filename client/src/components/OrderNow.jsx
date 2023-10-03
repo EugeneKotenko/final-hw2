@@ -10,7 +10,7 @@ const OrderNow = () => {
   useEffect(() => {
     const fetchSmoothies = async () => {
       try {
-        const response = await fetch("http://localhost:5555/data");
+        const response = await fetch("/data");
         const data = await response.json();
         setSmoothiesData(data);
       } catch (error) {

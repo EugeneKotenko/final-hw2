@@ -14,7 +14,7 @@ const SmoozieConstructor = () => {
   useEffect(() => {
     const fetchIngredients = async () => {
       try {
-        const response = await fetch("http://localhost:5555/ingredients");
+        const response = await fetch("/ingredients");
         const data = await response.json();
         setIngredients(data);
       } catch (error) {
