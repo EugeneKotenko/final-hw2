@@ -1,0 +1,66 @@
+/* header.module.scss */
+
+.header_nav {
+  background-color: #f8f9fa;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 2rem;
+}
+
+.logo img {
+  width: 50px; /* Змініть розміри за потреби */
+  height: 50px;
+  object-fit: cover;
+}
+
+.main_navbar {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.main_navbar li {
+  display: inline-block;
+}
+
+.link-wrapper {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.link-wrapper:hover {
+  background-color: #e9ecef;
+}
+
+.link-wrapper a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.link-wrapper a:hover {
+  color: #007bff;
+}
+
+.cart {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.cart a {
+  color: #fff;
+}
