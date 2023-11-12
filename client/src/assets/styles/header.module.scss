@@ -9,6 +9,12 @@
   box-shadow: 0 4px 4px rgba(68, 27, 71, 0.1);
   transition: padding 0.3s;
 
+  @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+    background-color: rgba(40, 41, 47, 0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+
   &.sticky {
     padding: 5px 0;
   }
