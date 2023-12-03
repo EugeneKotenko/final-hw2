@@ -1,0 +1,93 @@
+.container.contact__container {
+  max-width: 80%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 58%;
+  gap: 5%;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__option1 {
+  background-color: var(--email-bg);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid var( --title-span);
+  box-shadow: var(--tiny-shadow);
+}
+
+.contact__option2 {
+  background-color: var(--telegram-bg);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid var( --title-span);
+  box-shadow: var(--tiny-shadow);
+}
+
+.contact__option3 {
+  background-color: var(--whatsApp-bg);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid var( --title-span);
+  box-shadow: var(--tiny-shadow);
+}
+
+.contact__option:hover {
+  border-color: var( --color-border-tile-hover);
+  background: var(--color-bg-tile-hover);
+  cursor: default;
+}
+
+.contact__option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 1px solid var(--title-span);
+  resize: none;
+  color: green;
+  font-weight: 700;
+  background-color: var(--color-bg-variant);
+  box-shadow: var(--tiny-shadow);
+  font-family: "Nunito Sans", sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  .container.contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container.contact__container {
+    width: var(--container-width-sm);
+  }
+}

@@ -1,40 +1,41 @@
 import React from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";   //HashRouter це костиляра,але я не знайшов як саме вирішити проблему з сервером не на HOME  тепер сайт дриганий(((   
-import { Provider } from "react-redux";
-import "./assets/styles/index.scss";
-import HomePage from "./components/HomePage";
-import SmoozieConstructor from "./components/SmoozieConstructor";
-import AboutUsPage from "./components/AboutUsPage";
-import Cart from "./components/Cart";
-import Header from "./components/common/Header";
-import Footer from "./components/common/Footer";
-import Checkout from "./components/CheckoutForm";
-import ContactUs from "./components/ContactUs";
-import OrderNow from "./components/OrderNow";
-import store from "./redux/store";
+import Favicon from './Favicon';
+import { HashRouter, Routes, Route } from "react-router-dom";
+import { Provider } from 'react-redux';
+import store from './Components/Redux/store';
 
-function App() {
-  return (
-    <Provider store={store}>
-      <Router>
-        <div className="app">
-          <Header />
-          <main>
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/constructor" element={<SmoozieConstructor />} />
-              <Route path="/about" element={<AboutUsPage />} />
-              <Route path="/cart" element={<Cart />} />
-              <Route path="/checkout" element={<Checkout />} />
-              <Route path="/contact" element={<ContactUs />} />
-              <Route path="/order" element={<OrderNow />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-      </Router>
-    </Provider>
-  );
+import ErrorBoundary from './Components/Pages/ErrorBoundary';
+import Navbar from './Components/Common/Navbar/Navbar';
+import Home from './Components/Pages/Home';
+import SmoothieConstructor from './Components/Pages/SmoothieConstructor';
+import SpecialOffer from './Components/Pages/SpecialOffer';
+import About from './Components/Pages/About';
+import LoginSignup from './Components/Pages/LoginSignup';
+import Cart from './Components/Pages/Cart';
+import Footer from './Components/Common/Footer/Footer'
+
+const App = () => {
+    return (
+        <>
+            <ErrorBoundary>
+                <Provider store={store}>
+                    <HashRouter>
+                        <Favicon />
+                        <Navbar />
+                        <Routes>
+                            <Route path="/" element={<Home/>}/>
+                            <Route path="/constructor" element={<SmoothieConstructor/>}/>
+                            <Route path="/special" element={<SpecialOffer/>}/>
+                            <Route path="/about" element={<About/>}/>
+                            <Route path="/login" element={<LoginSignup/>}/>
+                            <Route path="/cart" element={<Cart/>}/>
+                        </Routes>               
+                    </HashRouter>
+                    <Footer />
+                </Provider>
+            </ErrorBoundary> 
+        </>
+    );
 }
 
 export default App;

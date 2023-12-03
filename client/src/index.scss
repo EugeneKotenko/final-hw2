@@ -1,19 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,200&display=swap"); //font-family: "Nunito Sans", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"); //  font-family: 'Dancing Script', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap'); // font-family: 'Ephesis', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');    //  font-family: 'Kalam', cursive;
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --tiny-shadow: 0px 0.8px 1.6px rgba(11,31,135,.25);
+  --title-span: rgb(19, 130, 6);
+  --color-bg: rgb(241, 241, 241);
+  --color-bg-variant: rgb(255, 255, 255);
+  --color-bg-tile: rgba(90, 90, 119, 0.3);
+  --color-bg-tile-hover: rgba(90, 90, 119, 0.2);
+  --color-border-tile: rgba(205, 152, 255, 0.4);
+  --color-border-tile-hover: rgba(205, 152, 255, 0.3);
+  --color-light: rgba(255, 255, 255, 0.6);
+  --swiper-theme-color: #673ab7;
+  --color-text: rgb(255, 255, 255);
+  --color-text-1: #000000;
+  --color-text-pink: rgba(232, 208, 255, 1);
+  --color-border: rgb(69, 141, 79);
+  --color-bg-hover: rgba(218, 210, 225, 1);
+  --color-bg-portfolio: rgba(31, 31, 71, 0.3);
+  --color-bg-portfolio-hover: rgba(31, 31, 71, 0.2);
+  --color-nav-bg: rgba(40, 41, 47, 0.8);
+  --email-bg: rgb(232 62 26);
+  --telegram-bg: #1d98dc;
+  --whatsApp-bg: #25d366;
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Poppins", "Lato", sans-serif;
+::-webkit-scrollbar {
+  display: none;
 }
 
-#root {
-  padding-top: 35px;
-  position: relative;
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1200px;
+  width: var(--container-width-lg);
   margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin-top: 8rem;
+}
+
+section > h2,
+section > h5 {
+  text-align: center;
+  color: var(--color-text-1);
+}
+
+section > h2 {
+  color: var(--title-span);
+  margin-bottom: 3rem;
+}
+
+.text-light {
+  color: var(--color-text-1);
+}
+
+a {
+  color: var( --color-text-1);
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-nav-bg);
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-text-pink);
+  font-weight: bold;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-border);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  font-weight: bold;
+  color: var(--color-border);
+  border-color: transparent;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--tiny-shadow);
+
+}
+
+.btn-primary {
+  background: var(--color-bg-variant);
+  color: var(--title-span);
+}
+
+// img {
+//   display: block;
+//   width: 100%;
+//   object-fit: cover;
+// }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  section > h2 {
+    margin-bottom: 2rem;
+  }
 }

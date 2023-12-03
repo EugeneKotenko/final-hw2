@@ -1,0 +1,31 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+
+.popular h1 {
+    color: aqua;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #918a8a;
+}
+
+.popular-item{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 50px;
+    transition: var(--transition);
+    // height: auto; /* Поддерживаем пропорции изображения */
+    // overflow: hidden; /* Обрезаем изображение, чтобы оно не выходило за пределы контейнера */
+    // border-radius: 30px; /* Задаем полукруглый (круглый) радиус углов */
+  }
